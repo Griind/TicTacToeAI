@@ -8,11 +8,11 @@ public class TicTacToeGame implements iBoardGame
 {
 
 	// ***********************************************************************************
-	// Final by Roman Svitukha.
+	// Project by Roman Svitukha.
 	//
 	// *********************************************************************************
 
-	// declare a Board object here and call it gameBoard.
+	// declaring a Board object here and call it gameBoard.
 	Board gameBoard = new Board();
 
 	/**
@@ -121,10 +121,7 @@ public class TicTacToeGame implements iBoardGame
 		return result;
 	}
 
-	/**
-	 * System out println the opening message for the game program. For example
-	 * "Welcome to The GAME!! Good Luck".
-	 */
+	
 	@Override
 	public void printOpeningMessage()
 	{
@@ -162,7 +159,7 @@ public class TicTacToeGame implements iBoardGame
 	 */
 	public void printBoard(String fileName)
 	{
-		// do the same thing that the printBoard method above does, but output
+		// does the same thing that the printBoard method above does, but output
 		// to a file instead of the console
 
 		try
@@ -297,7 +294,7 @@ public class TicTacToeGame implements iBoardGame
 
 		if (nextMoves.isEmpty() || depth == 0)
 		{
-			// Gameover or depth reached, evaluate sum
+			// Game over or depth reached, evaluate sum
 			bestsum = evaluate();
 		} else
 		{

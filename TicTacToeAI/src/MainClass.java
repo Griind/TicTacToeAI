@@ -9,15 +9,10 @@ public class MainClass {
 
 		final String PROGRAM_TERMINATED_MESSAGE = "GAME TERMINATED";
 
-		String outputFile = "/Volumes/MacStorage/gameResults.txt"; // put
-																	// YOUR
-																	// file
-																	// in
-																	// here
+		String outputFile = "/Volumes/MacStorage/gameResults.txt"; 
 		TicTacToeGame mTTTGame = new TicTacToeGame();
 
-		// red line under gameBoard is because you have to declare it in your
-		// TicTacToeGame class.
+		
 		int boardRows = mTTTGame.gameBoard.squares.length;
 		int boardCols = mTTTGame.gameBoard.squares[0].length;
 
@@ -28,7 +23,7 @@ public class MainClass {
 		int playerNumber = 1;
 
 		while (true) {
-			// print the board out
+			
 			mTTTGame.printBoard();
 
 			// ask user for move
@@ -75,9 +70,7 @@ public class MainClass {
 							System.out.println("It's a DRAW!!!");
 
 							mTTTGame.printBoard();
-							mTTTGame.printBoard(outputFile); // put YOUR path
-																// and filename
-																// here
+							mTTTGame.printBoard(outputFile); 
 
 							System.out.println(PROGRAM_TERMINATED_MESSAGE);
 							return;
@@ -94,7 +87,7 @@ public class MainClass {
 		}
 		// this is an overloaded version of the printBoard method. print to a
 		// disk file instead of the console.
-		mTTTGame.printBoard(outputFile); // put YOUR path and filename here
+		mTTTGame.printBoard(outputFile); 
 		System.out.println(PROGRAM_TERMINATED_MESSAGE);
 		mScan.close();
 		return;
